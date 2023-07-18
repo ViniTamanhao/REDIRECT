@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Random Redirect</title>
+  </head>
+  <body>
+    <script>
+      // Function to generate a random number between 0 and 1
+      function getRandomNumber() {
+        return Math.floor(Math.random() * 2);
+      }
+
+      // Array of the two links you want to redirect to
+      var links = [
+        "https://example.com/link1", // Replace this with your first link
+        "https://example.com/link2", // Replace this with your second link
+      ];
+
+      // Generate the random number and perform the redirect
+      window.onload = function () {
+        var randomIndex = getRandomNumber();
+        window.location.href = links[randomIndex];
+      };
+    </script>
+  </body>
+</html>
